@@ -1,7 +1,9 @@
 import express from "express";
 import bodyParser from 'body-parser';
 import userRoutes from './routes/user.js';
-
+import connectDB from "./config/db.js";
+import colors from 'colors';
+connectDB();
 const app = express();
 const PORT = 5000;
 
