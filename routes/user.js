@@ -3,7 +3,7 @@ const router = express.Router();
 import {v4 as uuidv4 } from 'uuid';
 import {getUsers , createUser, searchUser, deleteUser, updateUser} from '../controllers/user.js'
 
-
+ 
 
 // Show all user
 router.get('/' , getUsers);

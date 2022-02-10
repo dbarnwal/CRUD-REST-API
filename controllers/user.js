@@ -3,7 +3,7 @@ let users = []
 export const getUsers = (req , res) => {
     res.send(users);
 }
-export const createUser = (req , res) => {
+export const createUser = (req , res) => { 
     const user_from_post = req.body;
     users.push({... user_from_post , id: uuidv4()});
     console.log(users);
